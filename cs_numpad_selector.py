@@ -18,13 +18,13 @@
 
 
 bl_info = {
-	"name": "Numeric Selector",
+	"name": "Numpad Selector",
 	"category": "Cenda Tools",
 	"author": "Cenek Strichel",
 	"version": (1, 0, 0),
 	"blender": (2, 77, 0),
-	"description": "Selecting bones with hotkeys",
-	"location": "Hotkey"
+	"description": "Selecting bones with numeric keys",
+	"location": "Armature Properties + Set hotkey with 'view3d.num_select'"
 }
 
 
@@ -35,7 +35,7 @@ from bpy.props import StringProperty, IntProperty, BoolProperty, EnumProperty
 class NumControlPanel(bpy.types.Panel):
 	
 	"""Creates a Panel in the scene context of the properties editor"""
-	bl_label = "Bone Selector"
+	bl_label = "Numpad Selector"
 	bl_idname = "NUMCONTROL_PT_layout"
 	bl_space_type = 'PROPERTIES'
 	bl_region_type = 'WINDOW'
